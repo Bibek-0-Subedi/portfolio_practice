@@ -1,0 +1,99 @@
+body{
+	background-image: url("../image/background.jpg");  /*Photo by NordWood Themes on Unsplash https://unsplash.com/photos/KcsKWw77Ovw*/
+	background-color: #f0f0f0f0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+	width: 100%;
+	margin: 0px;
+}
+.header{
+	list-style-type: none; /*removes the dot*/
+	display: flex;
+	overflow: hidden;
+	width: 100%;
+	margin:0px;
+	padding: 0px;
+}
+.header_nav{
+	border-right: 1px solid #bbb; /*https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_dividers*/
+	width: 34%;
+	margin: 0px;
+}
+.header_nav a{
+	display: block;
+	color: black;
+	padding: 14px 16px;
+	text-decoration: none; /*removes the underline*/
+}
+.header_nav a:hover:not(.active){
+	background-color: #818285; /*w3schools*/
+	color:black;
+	
+}
+.active{
+	background-color: #818285; 
+	color:black;
+}
+.footer{
+	list-style-type: none; /*removes the dot*/
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	width: 100%;
+	margin:0;
+	padding: 0;
+	font: 17px/150% 'Verdana', sans-serif; /*https://www.w3schools.com/css/css_font.asp*/
+}
+
+.footer_nav{
+	border-right: 1px solid #bbb; 
+	width: 20%;
+}
+.footer_nav a{
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none; /*removes the underline*/
+}
+.footer_nav a:hover:not(.active){
+	background-color: #cccccc; /*w3schools*/
+	color:black;
+}
+.facebook{
+	background-color: #4267b2;
+	color: white;
+	font: bold;
+}
+.twitter{
+	background-color: #1da1f2;
+	color: white;
+	font: bold;
+}
+.skype{
+	background-color: #00aff0;
+	color: white;
+}
+.linkedin{
+	background-color: #0073b0;
+	color: white;
+}
+.reddit{
+	background-color: #ff4500;
+	color: white;
+}
+@media screen and (max-width: 600px){ /*becomes responsive of width is less than 800px*/
+	.header{
+		flex-direction: column;
+	}
+	.header_nav{
+		width: 100%
+	}
+	.footer{
+		flex-direction: column;
+	}
+	.footer_nav{
+		width: 100%
+	}
+}
